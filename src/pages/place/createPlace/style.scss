@@ -1,0 +1,244 @@
+@import "../../../index.scss";
+
+.create-place {
+  background: $detail-background-color;
+  height: 50%;
+  &-header-section {
+    background: $white-color;
+  }
+  .NavMenu-container {
+    position: relative;
+    left: 0;
+  }
+  .Menu-header-item {
+    color: $text-color-normal;
+  }
+  .item {
+    box-shadow: none;
+  }
+
+  .row-container {
+    border-radius: 5px;
+    padding: 30px 20px;
+  }
+
+  &-container {
+    &-header {
+      text-align: left;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $text-color-normal;
+      margin-top: 40px;
+      .back-arrow{
+        width: 23px;
+        height: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      @include fonts(27px, $text-color-normal, bold, Inter);
+
+      &-border {
+        border-left: 2px solid $border-color-light;
+        margin: 0 12px;
+      }
+
+      &-stepsection {
+        @include fonts(17px, $text-color-normal, 300);
+      }
+    }
+
+    &-subheader {
+      margin-top: 15px;
+      margin-bottom: 22px;
+      @include fonts(15px, $text-color-normal, 300);
+    }
+
+    &-venuesection {
+      padding: 0 10px;
+      margin-bottom: 80px;
+      border-radius: 10px;
+      &-baseClass {
+        background: #fff;
+        padding: 0px 10px 20px 10px;
+
+        &-heading {
+          letter-spacing: normal;
+          margin-bottom: 20px;
+          @include fonts(30px, $text-color-normal, bold);
+        }
+      }
+    }
+  }
+}
+
+.btn-venue {
+  width: 150px;
+  background: $secondary-color;
+  border: none;
+  border-radius: 50px;
+  line-height: 45px;
+  font-weight: normal;
+  @include fonts(16px, $white-color, normal, "Inter");
+}
+
+.ddlWrapper {
+  span {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .ignore-react-onclickoutside {
+    border: solid 1px #e9e9e9;
+    height: 40px;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a5a5a5;
+    margin: 4px 0 8px 0;
+
+    .item-input-text {
+      font-weight: 200;
+      color: #495042;
+    }
+  }
+}
+
+.addOnDdlWrapper {
+  .inputfield {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-radius: inherit;
+  }
+  .ignore-react-onclickoutside {
+    margin-right: 10px;
+    border: solid 1px #e9e9e9;
+    height: 40px;
+    display: block;
+    padding: 6px 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a5a5a5;
+    border-radius: inherit;
+    width: 65%;
+  }
+}
+.create-place-container{
+  width: auto;
+  padding: 0 7% 0 8%;
+  &-venuesection{
+    padding: 0;
+  }
+  &-header-border{
+    border-left: 2px solid #4f4f4f;
+  }
+  &-subheader{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000000;
+  }
+  &-border{
+    width: 25px;
+    height: 5px;
+    background-color: #068188;
+    margin-bottom: 34px;
+  }
+  &-venuesection-baseClass{
+    border-radius: 10px;
+    &-heading{
+      font-family: Inter;
+      font-size: 30.5px;
+    }
+    .product-box h2{
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: black;
+      text-transform: uppercase;
+    }
+    .hours-list{
+      font-family: Inter;
+      font-weight: 300;
+      color: black;
+      .form-group.ddlWrapper.active .item-input-text{
+        color: white;
+      }
+      .form-group.ddlWrapper.active .ignore-react-onclickoutside{
+        background-color: #068188;
+      }
+
+    }
+    .product-box{
+      .custom_radio_group .custom_radio{
+        font-family: Inter;
+        font-weight: 300;
+        color: black;
+      }
+    }
+  }
+  .form-block__form{
+    .input-control-label{
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 14px;
+      color: black;
+    }
+    .input-control{
+      margin-bottom: 19px;
+      .inputfield.rates{
+        //width: 300px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      .ignore-react-onclickoutside.time{
+        border-radius: 5px;
+      }
+      textarea.form-control{
+        height: 150px;
+      }
+    }
+    .ddlWrapper span{
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .ddlWrapper .item-input-text{
+      margin-bottom: 0;
+    }
+    .ddlWrapper .ignore-react-onclickoutside{
+      margin: 0 0 19px 0;
+    }
+  }
+}
+.ignore-react-onclickoutside{
+  .item-menu-custom{
+    width: 95%;
+    .item-menu-li:hover{
+      background-color: #EEEEEE;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+ .create-place .addOnDdlWrapper{
+   display: block;
+   & > *{
+     margin-bottom: 15px;
+   }
+  }
+}

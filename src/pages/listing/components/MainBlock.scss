@@ -1,0 +1,18 @@
+.filter .search_btn {
+  border: none;
+  color: #FFF;
+  font-family: "Inter";
+  padding: 10px 0;
+  font-size: 14px;
+  width: 120px;
+  height: 47px;
+  background-color: #078089;
+  margin-left: 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  @media (max-width: 1200px) {
+    width: 100px;
+    font-size: 14px;
+  }
+
+}

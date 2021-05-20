@@ -1,0 +1,65 @@
+.reviews {
+  & h1 {
+    margin: 40px 0;
+  }
+  font-family: 'Averta';
+
+  &-row {
+    margin: 50px 0;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+
+      &-name {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      &-date {
+        font-size: 16px;
+      }
+
+      &-rate {
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+
+        &-star {
+          display: flex;
+          align-items: center;
+          margin-right: 4px;
+
+          & img {
+            width: 15px;
+            margin-right: 4px;
+            padding-bottom: 3px;
+          }
+
+          font-size: 17px;
+        }
+
+        &-recommend {
+          display: flex;
+          align-items: center;
+          margin-left: 40px;
+          span {
+            opacity: 0.6;
+          }
+
+          & img {
+            margin-right: 8px;
+            padding-bottom: 3px;
+          }
+        }
+      }
+      &-comment {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.unCheck img {
+  width: 17px;
+}

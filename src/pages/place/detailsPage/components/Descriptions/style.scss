@@ -1,0 +1,61 @@
+@import '../../../../../index.scss';
+
+.amenities {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  font-family: 'Averta';
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+}
+
+.text-content {
+  font-family: 'Averta';
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &-container {
+    margin-top: 40px;
+    margin-right: 5%;
+    &-owner-row {
+      text-align: center;
+    }
+  }
+  &-items {
+    margin: 40px 0;
+  }
+}
+
+.included {
+  font-family: 'Averta';
+  margin: 20px 0;
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+  }
+  &-amenities {
+    &-count {
+      color: $common-color;
+      width: 150px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.24px;
+      margin-bottom: 40px;
+      cursor: pointer;
+    }
+  }
+  &-amenitiesModal {
+    font-family: 'Averta';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

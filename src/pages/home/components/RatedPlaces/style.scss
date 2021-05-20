@@ -1,0 +1,77 @@
+.PopularSearches {
+  width: 100%;
+  // max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #f5f5f5;
+
+  &__sliders {
+    //margin-left: -15px;
+  }
+
+  &__headline {
+    color: #222222;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__subheadline {
+    color: #222222;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
+
+.stroke {
+  width: 24px;
+  height: 5px;
+  background-color: #068187;
+  margin-bottom: 43px;
+
+  &__wrapper {
+    margin-bottom: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .stroke {
+      margin: 0;
+    }
+  }
+}
+
+.slider__arrows {
+  display: flex;
+}
+
+.next-arrow {
+  cursor: pointer;
+  background: url('../../../../assets/slider/right-arrow.png') 100%/100% no-repeat;
+  width: 6px;
+  height: 12px;
+  display: block;
+  &:hover {
+    background: url('../../../../assets/slider/right-arrow.png') 100%/100% no-repeat;
+  }
+}
+
+.prev-arrow {
+  cursor: pointer;
+  background: url('../../../../assets/slider/left-arrow.png') 100%/100% no-repeat;
+  display: block;
+  width: 6px;
+  height: 12px;
+  margin-right: 10px;
+
+  &:hover {
+    background: url('../../../../assets/slider/left-arrow.png') 100%/100% no-repeat;
+  }
+}

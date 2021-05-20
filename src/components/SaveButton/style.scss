@@ -1,0 +1,24 @@
+.save {
+  margin: 0 15px;
+  &-btn {
+    padding: 0;
+    border: none;
+    width: 65px;
+    font-family: 'Averta';
+    color: inherit;
+    background-color: transparent;
+    & span {
+      display: flex;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &-svg {
+    margin-right: 4px;
+  }
+}

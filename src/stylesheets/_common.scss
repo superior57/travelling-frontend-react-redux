@@ -1,0 +1,14 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import './mixins';
+
+.send-request-btn {
+  padding: 10px;
+  min-width: 180px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: solid 1px #04d2ff;
+  background-color: #fff;
+  outline: none !important;
+  @include font($fw: bold, $color: #04d2ff);
+}

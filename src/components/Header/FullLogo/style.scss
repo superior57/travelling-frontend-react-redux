@@ -1,0 +1,7 @@
+.fullLogo{
+    height: 45px;
+
+    @media (max-width: 345px) {
+        height: 35px;
+      }
+}

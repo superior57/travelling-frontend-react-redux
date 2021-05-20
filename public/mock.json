@@ -1,0 +1,640 @@
+{
+  "count": 20,
+  "rows": [
+    {
+      "id": 1,
+      "name": "Park in the Heart of Los Angeles",
+      "price": 250,
+      "rating": 4.7,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 1,
+        "street": "9640 Sierra Hwy"
+      },
+      "images": [
+        {
+          "id": 1,
+          "link": "/images/example_photo/penthouse1.jpg",
+          "type": 1
+        },
+        {
+          "id": 2,
+          "link": "/images/example_photo/penthouse2.jpg",
+          "type": 1
+        },
+        {
+          "id": 3,
+          "link": "/images/example_photo/penthouse3.jpg",
+          "type": 1
+        },
+        {
+          "id": 4,
+          "link": "/images/example_photo/penthouse4.jpg",
+          "type": 1
+        },
+        {
+          "id": 5,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 6,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Park in the Heart of New York",
+      "price": 200,
+      "rating": 4.8,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 2,
+        "street": "217 Bulldog Blvd"
+      },
+      "images": [
+        {
+          "id": 7,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 7,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 8,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Great park in the Heart of New York",
+      "price": 180,
+      "rating": 4.6,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 3,
+        "street": "3125 Wright St"
+      },
+      "images": [
+        {
+          "id": 9,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 9,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 10,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Great park in the Heart of NY",
+      "price": 220,
+      "rating": 4.5,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 4,
+        "street": "street example"
+      },
+      "images": [
+        {
+          "id": 11,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 11,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 12,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Great park in the Heart of PO",
+      "price": 300,
+      "rating": 4.9,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 13,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 13,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 14,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Great park in the Heart of QW",
+      "price": 215,
+      "rating": 4.4,
+      "city": {
+        "id": 3,
+        "city_name": "Selma"
+      },
+      "address": {
+        "id": 5,
+        "street": "street example 2"
+      },
+      "images": [
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 15,
+          "link": "/images/example_photo/penthouse5.jpg",
+          "type": 1
+        },
+        {
+          "id": 16,
+          "link": "/ExampleVideo/video.mp4",
+          "type": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+stages:
+    - test
+    - deploy
+test:
+    stage: test
+    script: echo "Running tests"
+deploy_test:
+    stage: deploy
+    script:
+    - cd /var/www/html/frontend/
+    #- /usr/bin/screen -X -S vent kill
+    - screen -ls vent | grep -E '\s+[0-9]+\.' | awk -F ' ' '{print $1}' | while read s; do screen -XS $s quit; done
+    - sudo git stash
+    #- sudo git pull origin master
+    - sudo ssh-agent sh -c "echo \"$SSH_PRIVATE_KEY\" | tr -d '\r' | ssh-add - ; git pull origin master"
+#    - sudo rm package-lock.json
+    - sudo npm install
+    - sudo npm run build
+    - /usr/bin/screen -S vent -d -m serve -s build
+    environment:
+        name: vent/test
+    tags:
+        - vent/test
+    only:
+        - master

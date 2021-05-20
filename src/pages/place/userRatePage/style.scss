@@ -1,0 +1,212 @@
+.rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 125px;
+  margin-bottom: 30px;
+  &-headline {
+    color: #000000;
+    font-family: 'AvertaBold';
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.48px;
+    margin-bottom: 90px;
+  }
+  &-user-block {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    height: 215px;
+    margin-bottom: 87px;
+  }
+  &-user-name {
+    display: block;
+    color: #000000;
+    font-family: 'AvertaBold';
+    font-size: 24px;
+    letter-spacing: 0.24px;
+    text-align: center;
+  }
+  &-describe-block {
+    margin-bottom: 65px;
+  }
+  &-describe-headline {
+    font-family: 'AvertaBold';
+    font-size: 36px;
+    letter-spacing: 0.36px;
+    color: #000000;
+    text-align: center;
+  }
+  &-describe-tagline {
+    font-family: 'Averta';
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin-bottom: 67px;
+  }
+  &-text {
+    width: 940px;
+    height: 482px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    outline: none;
+    resize: none;
+    color: #000000;
+    font-family: 'Averta';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: 0.24px;
+    padding: 25px;
+  }
+  &-star-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &-star-headline {
+    font-family: 'AvertaBold';
+    font-size: 36px;
+    letter-spacing: 0.36px;
+    text-align: center;
+  }
+  &-star-tagline {
+    font-family: 'Averta';
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 26px;
+  }
+  &-recommend-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  &-recommend-events {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-recommend-event {
+    color: #000000;
+    font-family: 'Averta';
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    margin-left: 25px;
+  }
+  &-event-container {
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-recommend-img {
+    height: 55px;
+    width: 55px;
+  }
+  &-submit {
+    width: 215px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #77d1fd;
+    color: #ffffff;
+    font-family: 'AvertaBold';
+    font-size: 20px;
+    letter-spacing: 0.18px;
+  }
+  &-media-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 70px;
+  }
+  &-media-downloaded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Averta';
+    font-size: 24px;
+    text-align: center;
+    width: 330px;
+    height: 224px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: solid 1px #cccccd;
+    &-block {
+      width: 218px;
+      transform: translate(-50%, -50%);
+      bottom: 50px;
+      left: 165px;
+      position: absolute;
+      span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+    }
+    &-all {
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      opacity: 0.24;
+      background-color: #04d2ff;
+    }
+    &-progress {
+      position: absolute;
+      height: 5px;
+      background-color: #04d2ff;
+    }
+  }
+  &-media-items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 73px;
+  }
+  &-media-preview {
+    width: 330px;
+    height: 224px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #cccccd;
+    position: relative;
+  }
+  &-media-preview-wrapper {
+    width: 330px;
+    height: 224px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #cccccd;
+    position: relative;
+  }
+  &-media-preview-video {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    height: 265px;
+    bottom: 0px;
+    outline: none;
+  }
+  &-photo-dropzone-block {
+    font-family: 'AvertaBold';
+    font-size: 24px;
+    width: 700px;
+    align-self: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}

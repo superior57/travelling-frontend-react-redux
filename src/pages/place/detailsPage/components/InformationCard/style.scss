@@ -1,0 +1,14 @@
+@import '../../../../../index.scss';
+
+.information-card {
+  padding: 20px;
+  background-color: $white-color;
+  &-title {
+    margin-bottom: 20px;
+  }
+  &-content {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $border-color;
+  }
+}

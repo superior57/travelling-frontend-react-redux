@@ -1,0 +1,20 @@
+.Amenities {
+  margin: 10px 0;
+  height: 50px;
+  & img {
+    width: 15px;
+    margin-right: 20px;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cross {
+  text-decoration: line-through;
+}

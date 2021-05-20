@@ -1,0 +1,7 @@
+@mixin font($fz: 18px, $ff: "Averta", $space: .18px, $fw: 300, $color: #000) {
+  font-family: $ff, sans-serif;
+  font-size: $fz;
+  letter-spacing: $space;
+  font-weight: $fw;
+  color: $color;
+}

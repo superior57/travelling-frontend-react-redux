@@ -1,0 +1,104 @@
+.testimonials {
+  padding: 90px 0 98px;
+
+  .stroke{
+    margin: 0;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 34%);
+    justify-content: center;
+    margin-top: 60px;
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(3, 386px);
+    }
+  }
+
+  &__card {
+    width: 340px;
+    height: 428px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.09);
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-width: 1440px) {
+      width: 340px;
+      height: 428px;
+      padding: 30px;
+    }
+  }
+
+  &__image {
+    height: 114px;
+    width: 114px;
+    @media (max-width: 1440px) {
+      height: 114px;
+      width: 114px;
+    }
+  }
+
+  &__quotes {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    @media (max-width: 1440px) {
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #484848;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    @media (max-width: 1440px) {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+  }
+
+  &__stroke {
+    background-color: black;
+    width: 18px;
+    height: 4px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    color: #222222;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 11px;
+    @media (max-width: 1440px) {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__position {
+    color: #484848;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    @media (max-width: 1440px) {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+  }
+}

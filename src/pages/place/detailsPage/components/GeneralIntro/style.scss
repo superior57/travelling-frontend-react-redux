@@ -1,0 +1,58 @@
+@import '../../../../../index.scss';
+
+.general-intro {
+  width: 100%;
+  padding: 20px 0;
+  background-color: $white-color;
+  border-bottom: 1px solid $border-color-light;
+
+  h1 {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: initial;
+  }
+  &-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &-right {
+      display: flex;
+    }
+    &-left {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  .location{
+    font-family: Inter;
+    font-size: 15px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #646464;
+    align-items: center;
+    svg{
+      margin-right: 12px;
+    }
+  }
+  .general-intro-panel-right{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: justify;
+    color: #222222;
+    .save-btn{
+      display: flex;
+      align-items: center;
+    }
+    .share-btn{
+      display: flex;
+      align-items: center;
+    }
+  }
+}

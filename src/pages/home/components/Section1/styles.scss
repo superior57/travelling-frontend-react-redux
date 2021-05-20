@@ -1,0 +1,262 @@
+.form-group {
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  input {
+    color: #000 !important;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 15px;
+    &_top {
+      margin-top: 40px;
+    }
+  }
+  &__element {
+    width: 45%;
+  }
+  &__search-btn {
+    width: 100%;
+    button {
+      pointer-events: none;
+    }
+  }
+  &__search-btn.ready {
+    button {
+      pointer-events: all;
+      background-color: #04d2ff !important;
+    }
+  }
+  &__time {
+    .timekeeper {
+      width: 50%;
+    }
+
+    .timekeeper-btn {
+      padding: 11px 17px;
+      background-color: #fff;
+      border: 1px solid rgba(34,36,38,.15);
+      border-radius: 4px !important;
+      font-family: "Averta", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0.16px;
+      color: #000;
+
+      &--start {
+        border-bottom-right-radius: 0!important;
+        border-top-right-radius: 0!important;
+      }
+
+      &--finish {
+        border-bottom-left-radius: 0!important;
+        border-top-left-radius: 0!important;
+        border-left: none;
+      }
+    }
+    .timekeeper-modal {
+      z-index: 10;
+    }
+  }
+  &__valid-message:after {
+    content: 'Date range cann\'t be more than 1 day';
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    transform: translate(-50%);
+    opacity: 0;
+    color: red;
+  }
+  &__valid-message.show:after {
+    opacity: 1;
+  }
+  &__guests {
+    .input, .attendees, .attendees-menu {
+      width: 100%;
+    }
+    .input {
+      padding: 11px 9px 8px;
+      border: 1px solid #e9e9e9;
+    }
+  }
+  .DateRangePicker div .DateRangePickerInput .DateInput {
+    width: 50% !important;
+  }
+  .DateRangePickerInput_1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .DateInput {
+    border: none !important;
+
+  }
+  .DateInput_input_1 {
+    font-family: "Averta", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+    color: #000;
+  }
+}
+
+.event-type {
+  margin-top: 20px;
+}
+
+#your_unique_start_date_id {
+  border-bottom-right-radius: 0!important;
+  border-top-right-radius: 0!important;
+}
+
+#your_unique_end_date_id {
+  border-bottom-left-radius: 0!important;
+  border-top-left-radius: 0!important;
+  border-left: none;
+}
+
+.top_form {
+  margin: -28px 0 0 133px;
+  height: auto;
+  max-width: 446px;
+  height: auto;
+  border: 1px solid #CCC;
+  border-radius: 6px;
+  background-color: #FFF;
+  padding: 25px 33px 38px;
+  position: relative;
+  width: 90%;
+
+  &__submit {
+    border-radius: 24px;
+    border: none;
+    background-color: #d7011a;
+    padding: 12px 35px;
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+&__big-label {
+  color: #000000;
+  font-size: 30px;
+  font-family: Inter;
+  font-weight: 700;
+  margin-bottom: 33px;
+  line-height: 1.3;
+}
+
+&__form-groop-label {
+  color: #000000;
+  font-size: 12px;
+  font-family: Inter;
+  margin-bottom: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+
+&__form-groop-autocomplete {
+  border-radius: 4px;
+  border: 1px solid #e9e9e9;
+  background-color: #ffffff;
+  padding: 14px;
+  width: 100%;
+  opacity: 0.7;
+  font-family: Inter;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.form-group{
+  lable{font-size: 13px;}
+}
+
+
+    .form-control {
+    border: none;font-size: 12px;
+    box-shadow: none;padding-left: 0px;
+  }
+  .form-control:focus{box-shadow: none;outline: none;}
+  .form-control::placeholder{font-style: italic;}
+  .col-sm-2, .col-sm-4{border-right: 1px solid #CCC;padding:6px 15px;}
+
+  .search_btn {
+    width: 80px;
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    background-color: #068187;
+    border: none;
+    color: #FFF;
+    padding: 10px 0;
+    border-radius: 7px;
+    font-size: 14px;
+  }
+}
+.top_form .col-sm-2:last-child {
+    border-right: none;
+}
+
+.attendees .input {
+  padding-left: 2px;
+  height: auto;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.form-group .DateInput_input_1 {
+  font-size: 12px !important;
+
+}
+
+.timekeeper-btn {
+  padding: 0px !important;
+  border: none !important;
+  height: 25px !important;
+  margin-bottom: 0px !important;
+  width: 97% !important;
+  font-size: 12px !important;
+}
+
+
+.DateRangePickerInput.DateRangePickerInput_1 {
+    margin-bottom: 30px;
+}
+
+input#your_unique_start_date_id, input#your_unique_end_date_id {
+    color: #757575!important;
+    font-family: Inter!important;
+    font-size: 14px!important;
+    font-weight: 300;
+}
+input#your_unique_start_date_id{
+  padding-left: 40%;
+
+}
+input#your_unique_end_date_id {
+  padding-left: 25%;
+}
+
+input#your_unique_start_date_id {
+    //border-right: 1px solid #e9e9e9 !important;
+}
+
+.form-group-wrapper {
+    display: flex;
+}
+
+.timekeeper-btn {
+    margin-bottom: 32px !important;
+    font-family: Inter !important;
+    width: 100% !important;
+    padding: 20px 14px !important;
+    color: #757575 !important;
+    font-size: 14px !important;
+    font-weight: 300;
+    border-radius: 2px;
+    border: 1px solid #dbdbdb !important;
+}

@@ -1,0 +1,12 @@
+diff a/src/pages/home/components/Testimonials/index.js b/src/pages/home/components/Testimonials/index.js	(rejected hunks)
+@@ -70,5 +70,5 @@ const testimonials = [
+-        "Couldn’t have been better. " +
+-        "The venue/Mansion was beautiful and equipped with everything " +
+-        "I needed (and lots of lovely touches / local design). " +
+-        "The host was very helpful and the location was great. " +
+-        "Thank you for helping make my wedding a memory one",
++      "Couldn’t have been better. " +
++      "The venue/Mansion was beautiful and equipped with everything " +
++      "I needed (and lots of lovely touches / local design). " +
++      "The host was very helpful and the location was great. " +
++      "Thank you for helping make my wedding a memory one"

@@ -1,0 +1,41 @@
+.history{
+  span{
+    display: flex;
+    align-items: center;
+  }
+  .back-arrow{
+    width: 23px;
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .date-filter.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .calendar{
+      width: 300px;
+    }
+    .btns button {
+      background: #E9EBEF;
+      border-radius: 4px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #979797;
+      padding: 14px 16px;
+      text-transform: capitalize;
+      margin-right: 10px;
+      box-shadow: none;
+      margin-bottom: 10px;
+
+      &:hover {
+        background: #078089;
+        color: #ffffff;
+      }
+    }
+  }
+}

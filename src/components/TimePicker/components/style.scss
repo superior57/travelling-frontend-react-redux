@@ -1,0 +1,88 @@
+.timeChoice {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 440px;
+}
+.timeChoice__title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0;
+  text-align: center;
+}
+.timeChoice__button {
+  transition: all 0.22s ease-out;
+  margin-top: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+
+  label {
+    cursor: pointer;
+    font-family: Inter;
+    width: 100%;
+    height: 52px;
+    color: #078089;
+    border: 1px solid #078089;
+    position: relative;
+    padding: 13px 10px;
+    font-weight: 600;
+    vertical-align: top;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    transition-property: width, transform;
+    &:hover,
+    &:focus {
+      border-width: 2px;
+    }
+
+
+  }
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked + label {
+      width: 48.5%;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-color: transparent;
+      &:hover,
+      &:focus {
+        border-width: unset;
+      }
+    }
+    &:disabled + label {
+      color: red;
+      border: 1px solid red;
+      cursor: not-allowed;
+    }
+  }
+
+}
+.timeChoice__confirm {
+  background-color: #078089;
+  color: #fff;
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding: 13px 10px;
+  font-weight: 600;
+  vertical-align: top;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  transition-property: width, transform;
+  width: 48.5%;
+  height: 52px;
+  margin-left: 3%;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+  &:hover,
+  &:focus {
+    background-color: #078089;
+    opacity: 0.8;
+  }
+}

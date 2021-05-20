@@ -1,0 +1,9 @@
+.location {
+  display: flex;
+  align-items: baseline;
+  & span {
+    font-family: Inter;
+    font-size: 14px;
+    color: #5c5c5c;
+  }
+}

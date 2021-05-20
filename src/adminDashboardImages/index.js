@@ -1,0 +1,9 @@
+export const Booking = require('./booking_icon.svg');
+export const Logo = require('./logo.png');
+export const ClientLogo = require('./client_logo.png');
+export const Transaction = require('./transactions_icon.svg');
+export const Rating = require('./rating_icon.svg');
+export const Venue = require('./venue_icon.svg');
+export const User = require('./user_icons.svg');
+export const Dashboard = require('./dashboard.png');
+export const Userman = require('./user.png');

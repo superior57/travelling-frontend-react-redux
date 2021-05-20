@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Orkney';
+  src: url('Orkney-Regular.eot');
+  src: url('Orkney-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Orkney-Regular.svg#Orkney-Regular') format('svg'),
+       url('Orkney-Regular.ttf') format('truetype'),
+       url('Orkney-Regular.woff') format('woff'),
+       url('Orkney-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

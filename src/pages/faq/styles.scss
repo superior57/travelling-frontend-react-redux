@@ -1,0 +1,11 @@
+.faq {
+  margin-top: 60px;
+  border-top: 1px solid #ccc;
+}
+.faq-item {
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  &__question {
+    font-size: 24px;
+  }
+}

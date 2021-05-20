@@ -1,0 +1,47 @@
+.signIn-btn_wrapper{
+  //width: 115px;
+  &:focus {
+    outline: none;
+  }
+  .signIn-btn {
+    text-decoration: none;
+    cursor: pointer;
+    color:white;
+
+    width: 115px;
+    padding: 12px 30px;
+    border: 1px solid transparent;
+    border-radius: 60px;
+    &:hover {
+      border: 1px solid white;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: auto;
+    padding: 0px 5px 3px;
+  }
+}
+.signIn-btn {
+  color:white;
+  font-size: 16px;
+  font-family: "Arial";
+  font-weight: normal;
+  line-height: 16.8px;
+
+  @media (max-width: 768px) {
+    font-size: 11px;
+    line-height: 1;
+  }
+}
+
+.drop-down {
+  margin-left: 10px;
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+}

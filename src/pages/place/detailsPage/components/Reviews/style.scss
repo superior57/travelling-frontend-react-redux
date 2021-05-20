@@ -1,0 +1,28 @@
+@import '../../../../../index.scss';
+
+.reviews {
+  background-color: $white-color;
+  width: 100%;
+  .header {
+    // display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3% 4%;
+    height: initial;
+
+    .number {
+      @include fonts(15px, $text-color-body, 500);
+    }
+
+    &-more {
+      @include fonts(12px, $secondary-color, 500, Inter);
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    padding: 0 10px 20px 10px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,29 @@
+.OperatingHours {
+  font-family: 'Averta';
+  .title-operating-hours {
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: 0.36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .content {
+    &-column {
+      display: flex;
+      flex-direction: column;
+    }
+    &-container {
+      display: flex;
+      flex-direction: row;
+      &-row {
+        margin-right: 80px;
+        width: 210px;
+      }
+    }
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.24px;
+    margin-bottom: 40px;
+  }
+}

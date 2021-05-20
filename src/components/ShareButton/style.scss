@@ -1,0 +1,43 @@
+.share {
+  margin: 0 15px;
+  &-btn {
+    display: flex;
+    padding: 0;
+    border: none;
+    font-family: 'Averta';
+    color: inherit;
+    background-color: transparent;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &-svg {
+    margin-right: 4px;
+  }
+}
+
+.modal-container {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  div:not(:first-child) {
+    margin-left: 10px;
+  }
+  &-allbtn {
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+    &-share {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

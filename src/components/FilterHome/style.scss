@@ -1,0 +1,97 @@
+.filter-main-wrapper {
+  background: #fff;
+  //width: 871px;
+  border-radius: 42px;
+  // margin-left: 140px;
+
+
+
+  .container {
+    height: 100%;
+    padding: 0;
+    background: #E9EBEF;
+    border-radius: initial;
+
+    .filter-row.search_home{
+      padding: 25px 15px;
+      border-radius: 4px;
+    }
+
+
+    .filter-row {
+      padding: 25px 0;
+      display: flex;
+      width: 1920px;
+      @media (max-width: 1920px) {
+        width: auto;
+        margin: 0 8.5%;
+        justify-content: initial;
+      }
+
+      &__location {
+        height: 80%;
+        width: 24%;
+        border-right: 1px solid #C4C4C4;
+
+
+      }
+
+      &__event {
+        height: 80%;
+        width: 24%;
+        border-right: 1px solid #C4C4C4;
+
+      }
+
+      &__date {
+        width: 45%;
+        height: 80%;
+
+        .filter-dates {
+          width: 100%;
+
+          .input {
+
+            .date {
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              height: 48px;
+
+              .startDate {
+                width: 50%;
+                height: 100%;
+                border-right: 1px solid #C4C4C4;
+                color: #222222;
+
+              
+              }
+
+              .endDate {
+                width: 50%;
+                padding-left: 15px;
+              }
+            }
+
+          }
+
+        }
+      }
+
+      &__btn {
+        width:4%;
+        // border: 1px solid black;
+
+        .search_btn {
+          background: url(../FilterHome/assets/search.svg) no-repeat center;
+
+          margin: 0;
+          height: 38px;
+          width: 38px;
+          border-radius: 100%;
+          background-color: #078089;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.SearchForm {
+  width: 350px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  &-input {
+    width: 65%;
+    height: 100%;
+    padding-left: 35px;
+    font-size: 15px;
+    outline: none;
+  }
+  &-btn {
+    width: 35%;
+    height: 100%;
+    color: #04d2ff;
+    font-family: 'Averta';
+    font-size: 17px;
+    font-weight: bold;
+    border-left: none;
+  }
+}

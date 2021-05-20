@@ -1,0 +1,242 @@
+.content{
+  margin: 50px 9% 50px 10%;
+}
+
+//.reservations, h1.page-name{
+//  margin-top: 30px;
+//  margin-bottom: 30px;
+//}
+
+.overlap-modal {
+  .overlap-modal__title {
+    padding: 20px 0 20px 20px;
+    h2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .overlap-modal__content {
+    padding: 20px 10px 20px 20px;
+  }
+  .overlap-modal__confirmation {
+    max-width: 400px;    
+    padding: 0;
+  }
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained {
+  background: #E9EBEF;
+  border-radius: 4px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #979797;
+  padding: 14px 16px;
+  text-transform: capitalize;
+  margin-right: 10px;
+  box-shadow: none;
+  margin-bottom: 10px;
+
+  &:hover {
+    background: #078089;
+    color: #ffffff;
+  }
+}
+
+thead.MuiTableHead-root {
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+td.MuiTableCell-root {
+  border-bottom: none;
+}
+
+.MuiTable-root, .MuiTable-root {
+  color: #777777;
+  font-family: 'Inter';
+}
+
+.reservation-wrapper {
+  .row-date, .row-event {
+    display: none;
+  }
+}
+@media (max-width: 815px) {
+  .reservation-wrapper {
+      .row-date, .row-event{
+        display: block;
+      }
+      .hours, .payment{
+        display: none;
+      }
+    .wrapper-btns-filter{
+      display: block !important;
+    }
+    .makeStyles-table-1 {
+      min-width: auto;
+      width: 100%;
+    }
+
+    .MuiTableHead-root {
+    display: none;
+    }
+
+    .MuiPaper-rounded {
+    overflow-x: hidden;
+    border: none;
+    box-shadow: none;
+    }
+
+    .MuiTableCell-root {
+    border-bottom: none;
+    padding-top: 0;
+    text-align: left;
+
+    a {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #10A5AD;
+  }
+
+    }
+
+    .MuiTableRow-root {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+   padding-top: 21px;
+    }
+
+    .row-event {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    order: 0;
+    line-height: 20px;
+    font-family: Inter;
+    }
+
+    .row-date {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.5;
+    font-style: normal;
+    font-family: Inter;
+    order: 1;
+    }
+
+
+  .row-from-to {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.5;
+    font-style: normal;
+    font-family: Inter;
+    order: 2;
+}
+
+.row-people, .row-message {
+  display: none !important;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedSecondary {
+  background: transparent;
+  color: #E63946;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0;
+}
+
+.row-button {
+  order: 5;
+}
+
+.reservations {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #6A6A6A;
+  line-height: 24px;
+  background: #ffffff;
+  padding-bottom: 0px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content-buttons {
+  margin-bottom: 5px;
+}
+}
+}
+
+.reservation-wrapper{
+  .wrapper-btns-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .date-filter.dashboard{
+      width: 300px;
+    }
+  }
+  span{
+    display: flex;
+    align-items: center;
+  }
+  .back-arrow{
+    width: 23px;
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 350px) {
+  .reservation-wrapper .wrapper-btns-filter .date-filter.dashboard{
+    width: 257px;
+    .DateInput:first-child::before{
+      content: '';
+
+    }
+    .DateInput:last-child::before{
+      content: '';
+    }
+    input#your_unique_start_date_id{
+      padding-left: 15%;
+    }
+    input#your_unique_end_date_id{
+      padding-left: 5%;
+    }
+  }
+}
+
+.mobile-only {
+  @media (min-width: 768px) {
+    display: none;
+    }
+}
+
+.mobile-hidden {
+  @media (max-width: 768px) {
+    display: none;
+    }
+}

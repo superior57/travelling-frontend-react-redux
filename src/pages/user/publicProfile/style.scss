@@ -1,0 +1,407 @@
+.page-name {
+  background: #E9EBEF;
+  padding: 32px 9% 32px 10%;
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #6A6A6A;
+  @media (max-width: 767px) {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #6A6A6A;
+      //background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.public-profile{
+  .page-name{
+    justify-content: initial;
+    align-items: center;
+    img.back-arrow {
+      width: 23px;
+      height: 30px;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.PublicProfilePage {
+  margin: 0 10%;
+  margin-bottom: 100px;
+  padding: 60px 0;
+  display: flex;
+  align-items: flex-start;
+  @media screen and (min-width: 1441px) {
+    padding-right: 117px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+.wrapper-user-info{
+  width: 470px;
+  max-width: 40%;
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    width: auto;
+  }
+}
+.user-info {
+  margin-bottom: 20px;
+  background: #FCFCFC;
+  border: 1px solid #EDEDED;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 30px -8px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  margin-right: 20px;
+  padding: 30px 20px;
+  flex: none;
+}
+
+.user-info__data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.user-info__person {
+  margin-right: 10px;
+}
+
+.user-info__image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.user-info__name {
+  margin-bottom: 10px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #10A5AD;
+}
+
+.user-info__location {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140.9%;
+
+  color: #000000;
+}
+
+.user-info__statistic {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.user-info__rating {
+  margin-bottom: 23px;
+}
+.user-info__proof {
+  width: 37px;
+  height: 42px;
+  margin-left: 10px;
+}
+.user-info__btn {
+  width: 199px;
+  height: 38px;
+
+
+  border: 1px solid #078089;
+  box-sizing: border-box;
+  border-radius: 40px;
+
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #078089;
+  background: transparent;
+}
+.user-about__title {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #979797;
+}
+.user-about__text {
+  width: 100%;
+  word-break: break-word;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140.9%;
+
+  color: #000000;
+}
+
+.user-reviews{
+  width: 70%;
+  .wrapper-starRating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .filter{
+      width: 35%;
+      .MuiAutocomplete-inputRoot[class*="MuiInput-root"] .MuiAutocomplete-input:first-child{
+        padding: 6px 0 6px 15px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+
+  }
+}
+
+.user-reviews__places {
+  margin-bottom: 32px;
+}
+.user-places__title {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140.9%;
+  
+  color: #000000;
+}
+
+.user-places__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-places__btn {
+  margin-bottom: 20px;
+  margin-right: 17px;
+
+  border: none;
+  background: #E9EBEF;
+  border-radius: 4px;
+  padding: 13px 25px; 
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #979797;
+  &_active {
+    background: #078089;
+    color: #fff;
+  }
+}
+//.user-reviews__reviews {
+//  border-top: 1px solid rgba(0, 0, 0, 0.1);
+//  padding-top: 30px;
+//}
+.place-reviews__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.place-reviews__title {
+  display: inline-block;
+  margin-right: 15px;
+
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  vertical-align: bottom;
+
+  color: #262626
+}
+.place-reviews__rating {
+  line-height: 21px;
+}
+.place-reviews__photo{
+  width: 353px;
+  height: 218px;
+  img{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.place-reviews__location {
+  padding-left: 25px;
+  margin: 10px 0;
+  position: relative;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #000000;
+  &::before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: url('./assets/pin.png');
+    width: 18px;
+  }
+}
+.place-reviews__count {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #262626;
+}
+
+.place-reviews__item {
+  margin-top: 30px;
+  max-width: 700px;
+  .reply-answer{
+    max-width: 680px;
+    margin-top: 20px;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #000000;
+    span{
+      font-size: 16px;
+    }
+  }
+  .reply-input{
+    width: 300px;
+    border: none;
+    border-bottom: solid 1px #e9e9e9;
+    display: block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a5a5a5;
+    margin-right: 10px;
+    &:focus{
+      outline: none;
+    }
+  }
+  .reply-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+    button{
+      background: #078089;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: normal;
+      font-family: "Averta";
+      padding: 3px 7px;
+    }
+  }
+}
+
+.place-reviews-item__text {
+  margin-top: 15px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.place-reviews-item__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  max-width: 680px;
+  @media screen and (max-width:375px) {
+    display: block;
+  }
+}
+
+.place-reviews-person {
+  display: flex;
+  //flex-direction: column;
+  //height: 48px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.place-reviews-person__image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+.place-reviews-person__name {
+  margin-top: 7px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #10A5AD;
+}
+.place-reviews-person__company {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+
+  color: #000000;
+}
+
+.place-reviews-item__date {
+  margin-top: 10px;
+  align-self: flex-end;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+
+  color: #000000;
+}

@@ -1,0 +1,73 @@
+.confirm.mobile{
+  display: none;
+}
+
+
+@media (max-width: 1000px) {
+  .confirm.desktop{
+    display: none;
+  }
+  .confirm.mobile{
+    width: 550px;
+    margin: 0 auto;
+    display: block;
+    .text-center h3{
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1;
+      color: #111111;
+    }
+    .note{
+      font-family: Inter;
+      font-size: 14px;
+      line-height: 1.43;
+      color: #111111;
+      font-weight: 500;
+      span{
+        color: #078089;
+        text-decoration: underline;
+      }
+    }
+    .signIn-line{
+      width: 35px;
+      height: 5px;
+      background-color: #078089;
+      margin: 15px auto;
+      display: block;
+    }
+    .content-section{
+      margin-top: 40px;
+      .sub-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .btn-wrapper{
+      width: 100%;
+
+      .btn-verify{
+        width: 100%;
+        border: none;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #078089;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.71;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .confirm.mobile {
+    width: 100%;
+  }
+}

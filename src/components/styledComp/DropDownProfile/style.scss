@@ -1,0 +1,64 @@
+.DropdownProfile {
+  position: relative;
+  width: 80px;
+  display: flex;
+
+  @media (max-width: 375px) {
+    width: 60px;
+  }
+
+  @media (max-width: 325px) {
+    width: 51px;
+  }
+
+  &__user {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__arrow {
+    width: 20px;
+    height: 20px;
+  }
+  &__menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    width: 176px;
+    height: auto;
+    left: 30px;
+    top: 167px;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.75);
+    z-index: 100;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__item {
+    font-family: "Averta";
+    font-size: 16px;
+    color: rgba(0,0,0, 0.5);
+    border-bottom: .5px solid #e1e1e1;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+      color: rgba(0,0,0, 0.5);
+      background-color: #e1e1e1;
+    }
+  }
+}

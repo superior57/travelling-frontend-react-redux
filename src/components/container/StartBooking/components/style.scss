@@ -1,0 +1,191 @@
+.startBooking-time {
+  position: relative;
+}
+.timeChoice {
+  padding: 40px 50px 60px;
+  position: absolute;
+  background-color: #fff;
+  //top: 95px;
+  right: 350px;
+  width: auto;
+  max-width: 740px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+  border: 1px solid #E6E8EC;
+  border-radius: 3px;
+  z-index: 10000;
+  &:before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+    border: 1px solid #E6E8EC;
+    top: -12px;
+    right: 230px;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    top: 1px;
+    right: 200px;
+    background-color: #fff;
+    z-index: 2;
+  }
+    &-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+    }
+
+}
+.timeChoice__title {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+
+  color: #262626;
+  margin-bottom: 15px;
+}
+
+.timeChoice__timeSlots {
+  display: flex;
+}
+.timeChoice__day:nth-child(2) {
+  margin-left: 27px;
+}
+.timeChoice__daySlots {
+  max-height: 500px;
+  overflow-y: auto;
+  display: flex;
+  .wraperCurrentDaySlots{
+    margin: 0 20px 10px 0;
+  }
+}
+.timeChoice__slot {
+  transition: all 0.22s ease-out;
+  margin-top: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+  width: 307px;
+
+  label {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-family: Inter;
+    width: 100%;
+    height: 47px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background: transparent;
+    padding: 15px 18px;
+    border: 1px solid #078089;
+
+    color: rgba(7, 128, 137, 0.5);
+    &:hover,
+    &:focus {
+      color: #078089;
+    }
+
+
+  }
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked + label {
+      background: #A9E7EC;
+      border-color: #A9E7EC;
+      color: rgba(7, 128, 137, 0.5);
+      &:hover,
+      &:focus {
+        color: #078089;
+      }
+    }
+    &:disabled + label {
+      cursor: not-allowed;
+      background: #FFCFD3;
+      border-color: #FFCFD3;
+      color: rgba(230, 57, 70, 0.5);
+      &:hover,
+      &:focus {
+        color: rgba(230, 57, 70, 0.5);
+      }
+    }
+  }
+
+}
+.timeChoiceBtn{
+  &__confirm{
+    margin-top: 5px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding: 13px 10px;
+    font-weight: 600;
+    width: 106px;
+    height: 47px;
+    background: #078089;
+    border-radius: 40px;
+    margin-right: 30px;
+    &:hover,
+    &:focus {
+      background-color: #078089;
+      opacity: 0.8;
+    }
+  }
+  &__cancel{
+    margin-top: 5px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding: 13px 10px;
+    font-weight: 600;
+    width: 106px;
+    height: 47px;
+    background: darkred;
+    border-radius: 40px;
+    &:hover,
+    &:focus {
+      background-color: darkred;
+      opacity: 0.8;
+    }
+  }
+}
+
+
+.timeChoice__error {
+  color: red;
+  height: 40px;
+}

@@ -1,0 +1,132 @@
+.signIn {
+  min-height: 100vh;
+  font-family: "Inter - Semi Bold";
+  .container-header{
+    background: #fff;
+  }
+  &-field{
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+  &-line{
+    width: 35px;
+    height: 5px;
+    background-color: #078089;
+    margin: 15px auto 0;
+  }
+  &-description{
+    font-weight: 600;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 11px;
+    margin-bottom: 30px !important;
+  }
+  .login-h1{
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  &-field {
+    input{
+      border-radius: 5px;
+      border: solid 1px #dddddd;
+    }
+    //.ui.error.message {
+    //  width: 277px;
+    //}
+  }
+  .sign-in-row-m0{
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-between;
+    .wrapper-remember{
+      display: flex;
+      label{
+        padding-left: 10px;
+        font-family: Inter;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #777777;
+      }
+    }
+    a.login-another-pages{
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.71;
+      color: #078089;
+      text-decoration: none;
+    }
+  }
+  .wrapper-signIn{
+    button{
+      font-family: Inter;
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #078089;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+      border: none;
+    }
+  }
+  &__form-footer{
+    margin-top: 20px;
+    .another-pages-text{
+      font-family: Inter;
+      font-size: 14px;
+      color: black;
+      opacity: initial;
+      font-weight: 500;
+    }
+    .login-another-pages{
+
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: bold;
+      color: #078089;
+      text-decoration: none;
+      text-transform: none;
+    }
+  }
+}
+
+
+.form-wrapper {
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 15px;
+  background-color: white;
+}
+
+.signIn__form-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  padding: 0px 0px 15px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.login-signIn {
+  font-family: 'Inter';
+  color: #757575;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media (min-width: 500px) {
+  .form-wrapper{
+    width: 500px;
+    margin: 40px auto;
+    .signIn-description{
+      padding: 0;
+    }
+  }
+}

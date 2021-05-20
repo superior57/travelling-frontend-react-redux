@@ -1,0 +1,37 @@
+.top_header {
+  background: #fff;
+  width: 100%;
+  position: relative;
+  // left: 0 ;
+  // margin: 0;
+}
+.NavMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .NavMenu-container {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-link {
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+
+      @media (max-width: 325px) {
+        margin-right: 0;
+      }
+    }
+    
+  }
+  
+}
+
+.navBar-div {
+  justify-content: space-between !important;
+}
+
+

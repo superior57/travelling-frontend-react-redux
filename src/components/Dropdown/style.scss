@@ -1,0 +1,102 @@
+.item {
+  cursor: pointer;
+  position: relative;
+  width: 443px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 0 11.7px 1.3px rgba(0, 5, 7, 0.14);
+  background-color: #ffffff;
+  &-menu {
+    background-color: #ffffff;
+  }
+  &-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+
+    &-text {
+      font-family: 'Averta';
+      font-size: 16px;
+    }
+  }
+
+  svg {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    transition: all 0.3s linear;
+  }
+  &.active {
+    svg {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  &-text {
+    font-family: 'Averta';
+    font-weight: lighter;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 4px;
+  }
+
+  &-menu {
+    z-index: 10;
+    position: absolute;
+    width: 443px;
+    border-radius: 4px;
+    box-shadow: 0 0 11.7px 1.3px rgba(0, 5, 7, 0.14);
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: scroll;
+    &-li {
+      display: flex;
+
+      align-items: center;
+      padding: 0 10px;
+      height: 50px;
+      background: #fff;
+      font-family: Averta;
+      font-size: 16px;
+      font-weight: 300;
+      &:hover {
+        cursor: pointer;
+        background: #efefef;
+      }
+      &-pi {
+        font-weight:700;
+      }
+    }
+  }
+
+  &-menu-custom {
+    z-index: 10;
+    position: absolute;
+    width:flex;
+    border-radius: 4px;
+    box-shadow: 0 0 11.7px 1.3px rgba(0, 5, 7, 0.14);
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: scroll;
+    &-li {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      height: 50px;
+      background: #fff;
+      font-family: Averta;
+      font-size: 16px;
+      font-weight: 300;
+      &:hover {
+        cursor: pointer;
+        background: #efefef;
+      }
+    }
+  }
+}

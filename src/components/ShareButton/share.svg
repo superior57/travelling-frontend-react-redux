@@ -1,0 +1,9 @@
+<svg style="height:16px;width:16px;display:block;overflow:visible" viewBox="0 0 24 24" fill="currentColor"
+    fill-opacity="0" stroke="#078089" stroke-width="1.5" focusable="false" aria-hidden="true" role="presentation"
+    stroke-linecap="round" stroke-linejoin="round">
+    <g fill-rule="evenodd">
+        <path d="m11.5 16v-15"></path>
+        <path d="m7.5 4 4-3 4 3"></path>
+        <path d="m5.4 9.5h-3.9v14h20v-14h-3.1"></path>
+    </g>
+</svg>

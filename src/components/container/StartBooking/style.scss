@@ -1,0 +1,232 @@
+@import '../../../index.scss';
+
+.startBooking {
+  display: flex;
+  flex-direction: column;
+  background-color: $white-color;
+  box-shadow: 0 0 11.7px 1.3px rgba(0, 5, 7, 0.14);
+
+  &-time{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-people{
+    margin-bottom: 32px;
+  }
+
+  &-content-review{
+    justify-content: center;
+  }
+  &-btn{
+    text-align: center;
+    .startBooking-content-booking-btn{
+      width: 60%;
+    }
+    .startBooking-content-booking-info{
+      font-family: Inter;
+      font-size: 12px;
+      color: #000000;
+    }
+  }
+
+  &-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: $secondary-color;
+    height: 100px;
+    padding: 10px 20px;
+
+    &-price {
+      @include fonts(34px, $white-color);
+    }
+    &-hour {
+      @include fonts(25px, $white-color);
+    }
+  }
+
+  &-content {
+
+    &-p10 {
+      padding-top: 10px;
+    }
+
+    &-booking {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-btn {
+        width: 70%;
+        background: $secondary-color;
+        border: none;
+        border-radius: 50px;
+        line-height: 45px;
+        @include fonts(16px, $white-color, normal);
+      }
+
+      &-info {
+        line-height: 50px;
+        @include fonts(12px, $text-color-normal);
+      }
+    }
+
+    &-review {
+      display: flex;
+      padding-top: 20px;
+      border-top: 1px solid #d7d7d7;
+
+      &-btn {
+        width: 160px;
+        padding: 9px 10px;
+        background-color: $white-color;
+        border: 1px solid #d7d7d7;
+        border-radius: 50px;
+        line-height: 25px;
+        margin-right: 5px;
+        @include fonts(14px, $border-color);
+        &:last-child {
+          margin-right: 0;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.DateInput {
+  border: 1px solid $border-color;
+  //&:last-child{
+  //  margin-left: 10px;
+  //}
+  &:first-child {
+    border-radius: 4px 0 0 4px;
+    &::before {
+      content: 'From';
+      position: absolute;
+      width: 10px;
+      right: 14px;
+      height: 10px;
+      left: 7%;
+      top: 25%;
+      color: #757575;
+      font-family: Inter;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    & > input {
+      border-radius: 4px 0 0 4px;
+      font-family: 'Averta';
+      font-size: 14px;
+      font-weight: lighter;
+      color: #000000;
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+  }
+  &:last-child {
+    & .DateInput_1 {
+      border-left: none;
+    }
+    border-radius: 0 4px 4px 0;
+
+    &::before {
+      content: 'To';
+      position: absolute;
+      width: 10px;
+      right: 14px;
+      height: 10px;
+      left: 0;
+      top: 25%;
+      color: #757575;
+      font-family: Inter;
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      right: 14px;
+      top: 50%;
+      height: 10px;
+      border-left: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+      transform: translate(0, -50%) rotate(-45deg);
+    }
+    & > input {
+      font-family: 'Averta';
+      font-size: 14px;
+      font-weight: lighter;
+      color: #000000;
+      border-radius: 0 4px 4px 0;
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+  }
+}
+
+.DateInput_input_1 {
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.DateInput_input__focused {
+  border-bottom: 0;
+}
+
+.DateRangePickerInput_arrow_1 {
+
+  display: none;
+
+  //padding: 8px 10px 9px 0;
+  //span{
+  //  color: #757575;
+  //  font-family: Inter;
+  //  font-size: 14px;
+  //  font-weight: 300;
+  //}
+}
+
+.startBooking-content-time {
+  & .timekeeper:first-child {
+    & button {
+      border-radius: 4px 0 0 4px;
+    }
+  }
+  & .timekeeper:last-child {
+    & button {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+
+//.new-filter .DateInput:last-child > input{
+//  pointer-events: none;
+//}
+
+.DateRangePicker div .DateRangePickerInput .DateInput {
+  margin-right: 30px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.DateRangePicker div .DateRangePickerInput .DateInput:last-child {
+  margin-right: 0;
+}
+
+.slotsTime{
+  margin: 20px auto 30px auto !important;
+}
+
+.startBooking-content-booking-btn.back {
+  background-color: gray;
+}

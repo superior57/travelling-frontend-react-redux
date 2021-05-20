@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Averta';
+  src: url('./assets/font/Averta.ttf'), url('./assets/font/Averta.otf');
+}
+
+@font-face {
+  font-family: 'AvertaBold';
+  src: url('./assets/font/AvertaBold.otf');
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// colors
+$common-color: #10a5ad;
+$secondary-color: #078089;
+$border-color: #757373;
+$bordergray-color: #ccc;
+$border-color-light: #e9e9e9;
+$card-background-color: #f2f2f2;
+$white-color: #ffffff;
+$redback-color: #bf0a0b;
+$text-color-body: #646464;
+$text-color-normal: #000000;
+$detail-background-color: #F2F3F3;
+
+
+
+@mixin fonts($size: 14px, $color: '', $weight: normal, $family: 'Averta') {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
+
+// common font styles
+.heading-1 {
+  @include fonts(32px, $text-color-normal, 600, Inter);
+}
+
+.heading-2 {
+  @include fonts(20px, $text-color-normal, 600, Inter);
+}
+
+.body-1 {
+  @include fonts(15px, $text-color-body, normal, Inter);
+}
+
+.body-2 {
+  @include fonts(12px, $text-color-body, normal, Inter);
+}
+
+.body-1-600 {
+  @include fonts(15px, $text-color-normal, 600, Inter);
+}
+
+.caption-1 {
+  @include fonts(12px, $text-color-normal, normal, Inter);
+}
+
+.caption-2 {
+  @include fonts(11px, $text-color-normal, normal, Inter);
+}
+
+//77d1fd
+/* FONTS */
+
+/* @font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+  src: url('HelveticaNeueCyr-Bold.eot');
+  src: local('HelveticaNeueCyr-Bold'),
+    url('HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+    url('HelveticaNeueCyr-Bold.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Bold.woff') format('woff'),
+    url('HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: url('HelveticaNeueCyr-Medium.eot');
+  src: local('HelveticaNeueCyr-Medium'),
+    url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('HelveticaNeueCyr-Medium.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Medium.woff') format('woff'),
+    url('HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Normal';
+  src: url('HelveticaNeueCyr-Roman.eot');
+  src: local('HelveticaNeueCyr-Roman'),
+    url('HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+    url('HelveticaNeueCyr-Roman.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Roman.woff') format('woff'),
+    url('HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('HelveticaNeueCyr-Light.eot');
+  src: local('HelveticaNeueCyr-Light'),
+    url('HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+    url('HelveticaNeueCyr-Light.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Light.woff') format('woff'),
+    url('HelveticaNeueCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+} */
+
+/* FONTS END */
+
+/* body p {
+  font-family: 'HelveticaNeueCyr-Normal';
+} */
+
+h1 {
+  font-family: 'Averta';
+  font-weight: 700;
+  color: #000;
+  font-size: 36px;
+}
+
+.navBar {
+  box-shadow: 0px 0px 20px rgba(0, 50, 147, 0.05);
+}
+
+.modal-open .modal {
+  overflow-y: hidden !important;
+}
+
+.height-45 {
+  height: 45px !important;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.pageCenter {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+button.reset-btn {
+  margin-top: 38px;
+}
+//@media (min-width: 576px) {
+//  .container {
+//    max-width: 540px !important;
+//  }
+//}
+//
+//@media (min-width: 768px) {
+//  .container {
+//    max-width: 720px !important;
+//  }
+//}
+//
+//@media (min-width: 992px) {
+//  .container {
+//    max-width: 960px !important;
+//  }
+//}
+//
+//@media (min-width: 1200px) {
+//  .container {
+//    max-width: 1140px !important;
+//  }
+//}
+
+@media (min-width: 1520px) {
+  .filter.container {
+      max-width: 100% !important;
+  }
+
+  .NavMenu.container {
+        max-width: 100% !important;
+  }
+
+  .container.0000 {
+        max-width: 100% !important;
+  }
+}

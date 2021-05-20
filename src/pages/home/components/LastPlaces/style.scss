@@ -1,0 +1,11 @@
+.LastPlaces {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 40px;
+  &__headline {
+    font-family: 'AvertaBold';
+    font-size: 30px;
+    margin: 20px 0;
+  }
+}

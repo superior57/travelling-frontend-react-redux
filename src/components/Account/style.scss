@@ -1,0 +1,50 @@
+.account-wrapper {
+  width: 170px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.account-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  &:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+.account-dropdown {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.drop-menu {
+  position: absolute;
+  top: 138px;
+  left: 90px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #efefef;
+  width: 188px;
+  height: 150px;
+  background: white;
+  border-radius: 5px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+  li {
+    font-family: 'Averta';
+    font-size: 19px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}
+.rotate-arrow {
+  transform: rotate(180deg);
+}

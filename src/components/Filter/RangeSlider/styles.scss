@@ -1,0 +1,63 @@
+.range-slider {
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.75);
+  .rc-slider-track{
+    background-color: #10a5ad;
+    opacity: 0.7;
+  }
+  .range-slider__input .rc-slider{
+    width: 95%;
+  }
+  #{r}: &;
+  &__title,
+  &__value-input {
+    font-size: 18px !important;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+    color: #000;
+    border: none;
+  }
+  &__title{
+    font-family: "Inter";
+  }
+  &__value-input {
+    width: 35px;
+    font-family: "Inter";
+  }
+  &__input,
+  &__values {
+    margin-top: 10px;
+  }
+  &__values {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__value {
+    &_min {
+      margin-right: 20px;
+    }
+  }
+  &__value.error {
+    position: relative;
+    &:after {
+      content: 'Invalid value';
+      position: absolute;
+      bottom: -30px;
+      left: 3px;
+      width: 90px;
+      height: 30px;
+      font-size: 14px;
+      color: red;
+    }
+    .range-slider__value-input {
+      border: 1px solid red !important;
+    }
+  }
+  &__min-input {
+    padding: 14px 15px 11px !important;
+  }
+}

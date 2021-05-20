@@ -1,0 +1,25 @@
+.dropzone-video {
+  width: 207px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 0 11.7px 1.3px rgba(0, 5, 7, 0.14);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  span:before {
+    content: url('./assets/play-button-arrowhead.png');
+    margin-right: 10px;
+  }
+  p {
+    font-family: 'AvertaBold';
+    font-size: 18px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #04d2ff;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

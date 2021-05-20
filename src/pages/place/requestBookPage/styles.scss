@@ -1,0 +1,625 @@
+@import 'src/stylesheets/mixins';
+@import 'src/stylesheets/common';
+
+button:focus{
+  outline: none !important;
+}
+.booking-page {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  &__sidebar {
+    padding: 30px 30px 50px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 11.7px 1.3px rgba(0, 5, 7, 0.14);
+    background-color: #fff;
+  }
+  &__sidebar-section-img {
+    padding-bottom: 20px;
+    &_view {
+      padding-top: 0;
+    }
+  }
+  &__title {
+    @include font($fz:36px, $fw:bold, $space: 0.36px);
+  }
+  &__subtitle {
+    @include font($fz:30px, $fw:bold, $space: 0.3px);
+  }
+  &__section-content {
+    margin-right: 15px;
+  }
+  &__parameter {
+    margin-top: 30px;
+  }
+  &__parameter-header {
+    @include font($fz:24px, $fw:bold, $space: 0.24px);
+    &.host a{
+      color: #646464;
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: initial;
+      //&:hover{
+      //  text-decoration: none;
+      //}
+    }
+  }
+  &__input {
+    margin-top: 20px;
+    max-width: 280px;
+    background-color: #fff;
+  }
+  &__input-field {
+    padding: 18px 0 0 16px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    outline: none;
+    &::placeholder{
+      opacity: 0.7;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(117, 117, 117, 0.7);
+    }
+    @include font();
+    &_textarea {
+      height: 250px;
+      resize: none;
+    }
+    &_promocode {
+      padding: 0 0 0 16px;
+      width: auto;
+    }
+  }
+  &__time {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    .timekeeper {
+      width: 50%;
+      max-width: 200px;
+    }
+  }
+  &__reviews {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__counter {
+    @include font($fz: 16px);
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
+
+  &__location {
+    display: flex;
+    padding-bottom: 21px;
+    margin-bottom: 21px;
+    border-bottom: 1px solid #e8e9eb;
+  }
+  &__location-img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  &__place {
+    @include font($fz: 20px, $color: #ccc);
+  }
+  &__host {
+    display: flex;
+    margin-top: 15px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #e8e9eb;
+    margin-bottom: 12px;
+    &-img{
+      margin-right: 30px;
+    }
+  }
+  &__host-content {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+  &__host-name {
+    @include font($fz: 20px);
+  }
+  &__host-img {
+    width: 62.4px;
+    height: 62.4px;
+    border: solid 2px #078089;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__params {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+    &_start {
+      justify-content: flex-start;
+    }
+  }
+  &__param-text {
+    @include font($fz: 20px);
+    &_bold {
+      font-weight: bold;
+    }
+  }
+  &__param-img,
+  &__param-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-weight: 600;
+    margin-bottom: 43px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .DateRangePicker {
+    position: relative !important;
+    z-index: 3 !important;
+  }
+}
+
+.error-msg{
+  color: red;
+  margin: 30px 0;
+  font-size: 16px;
+  p{
+    text-align: center;
+  }
+  &_promocode {
+    margin: 10px 0;
+    text-align: right;
+  }
+}
+
+
+
+.booking-page{
+  justify-content: center;
+  //max-width: 1600px;
+  margin: 50px auto 70px;
+  padding: 0 15% 0 20%;
+
+  .confirm{
+    text-align: center;
+    .send-request-btn{
+      width: 180px;
+      height: 47px;
+      background-color: #078089;
+      border: none;
+      border-radius: 40px;
+      color: white;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: normal;
+      margin-right: 30px;
+      &.back{
+        background-color: grey;
+      }
+    }
+    .startBooking-content-review-btn {
+      width: 180px;
+      height: 50px;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 30px;
+      font-family: Inter;      
+    }
+  }
+
+  &__message-text{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #646464;
+
+    .title{
+      width: 15%;
+    }
+
+    .description{
+      width: 50%;
+      text-align: end;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .booking-page__param-text{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #646464;
+    &.price, &.fee{
+      font-weight: 600;
+      color: #000000;
+    }
+
+    &.total{
+      font-size: 18px;
+      color: #000000;
+      font-weight: bold;
+    }
+    &.total-price{
+      font-size: 18px;
+      color: #078089;
+      font-weight: bold;
+    }
+    &.promocode {
+      display: flex;
+    }
+  }
+  &__params_start{
+    justify-content: space-between;
+    margin-bottom: 37px;
+    .people, .date{
+      display: flex;
+      align-items: center;
+
+      .booking-page__param-text{
+        font-size: 15px;
+      }
+    }
+  }
+  &__host-name{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #646464;
+  }
+  &__host{
+    display: flex;
+    align-items: center;
+  }
+  &__stars{
+    font-family: Inter;
+    font-size: 15.5px;
+    text-align: justify;
+    color: #646464;
+
+    .icon{
+      margin-right: 10px;
+    }
+  }
+  &__address{
+    display: flex;
+  }
+  &__location{
+    align-items: center;
+    justify-content: space-between;
+    &-img{
+      margin-right: 0;
+      img{
+        width: 12px;
+        height: 16px;
+      }
+    }
+  }
+  &__place{
+    font-family: Inter;
+    font-size: 15px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #646464;
+    @media (max-width: 1800px) {
+      margin-right: 30%;
+    }
+    @media (max-width: 1600px) {
+      margin-right: 25%;
+    }
+    @media (max-width: 1500px) {
+      margin-right: 20%;
+    }
+  }
+
+  &__sidebar-section_view{
+    position: relative;
+  }
+  &__parameter-header{
+    font-family: Inter;
+    font-size: 12px;
+    letter-spacing: normal;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    &.host{
+      color: #646464;
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: initial;
+      span{
+        font-weight: bold;
+        color: #078089;
+      }
+    }
+    &.venue-name{
+      font-family: Inter;
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: normal;
+      color: #ffffff;
+      position: absolute;
+      text-transform: initial;
+      bottom: 40px;
+      left: 25px;
+    }
+  }
+  &__parameter.date{
+    width: 49%;
+
+  }
+  &__parameter.features{
+    display: flex;
+    justify-content: space-around;
+    .range, .activity{
+      width: 48%;
+      .booking-page__input{
+        max-width: initial;
+        border: 1px solid #e9e9e9;
+        border-radius: 4px;
+      }
+    }
+  }
+  &__send-request.message{
+    margin-top: 65px;
+    text-align: center;
+    button{
+      width: 223px;
+      height: 47px;
+      background-color: #078089;
+      border: none;
+      border-radius: 40px;
+      color: white;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: normal;
+    }
+  }
+  &__title{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: normal;
+  }
+  &__subtitle{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: normal;
+    padding: 16px 0 32px;
+    border-bottom: 1px solid #e8e9eb;
+  }
+  &__content {
+    width: 900px;
+    margin-right: 50px;
+    padding: 50px 44px 99px;
+    border-radius: 10px;
+    box-shadow: 0 0 11.7px 1.3px rgba(0, 5, 7, 0.14);
+    background-color: #fff;
+
+    .DateInput.DateInput_1{
+      border-radius: 4px;
+    }
+    .label-wrapper{
+      position: relative;
+      padding-top: 0;
+    }
+    label.request-booking {
+      font-family: Inter;
+      font-size: 12px;
+      letter-spacing: normal;
+      text-align: left;
+      font-weight: bold;
+    }
+    label.request-booking:nth-child(2) {
+      position: absolute;
+      left: 51%;
+    }
+    .timekeeper-btn.request-booking{
+      margin-bottom: 0 !important;
+      border-radius: 4px;
+    }
+    .timekeeper.request-booking{
+      max-width: 194px;
+    }
+  }
+  &__time{
+    justify-content: space-between;
+  }
+  &__sidebar{
+    width: 768px;
+    padding: 22px 24px 30px;
+  }
+  &__wrapper-time{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__input_textarea{
+    max-width: initial;
+  }
+  &__input-field_textarea{
+    height: 115px;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    width: 70%;
+    background: #078089;
+    border: none;
+    border-radius: 50px;
+    line-height: 45px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Averta";
+    &_promocode {
+      width: 110px;
+      margin-left: 10px;
+      align-self: flex-start;
+    }
+  }
+}
+
+#alert-dialog-description{
+  font-family: Inter;
+  font-size: 16px;
+  margin: 10px 30px 10px 0;
+}
+
+#simple-dialog-title{
+  font-family: Inter;
+  font-size: 18px;
+  text-transform: uppercase;
+  h2{
+    letter-spacing: 1px;
+  }
+}
+#alert-dialog-btn{
+  justify-content: space-around;
+  button{
+    font-family: Inter;
+    font-size: 14px;
+    color: #078089;
+  }
+}
+
+.MuiDialog-paper{
+  padding: 15px;
+}
+
+@media (max-width: 767px) {
+  .booking-page {
+    padding: 0;
+
+    &__sidebar {
+      box-shadow: none;
+  }
+
+  &__img {
+    max-height: 372px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__sidebar-section_view {
+    display: flex;
+    flex-direction: column;
+}
+
+&__parameter-header.venue-name {
+  font-size: 20px;  
+  color: #111111;
+  font-weight: bold;
+  position: static;
+  order: -1;
+  line-height: 24px;
+  font-family: Inter;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+&__place {
+  display: flex;
+  font-size: 14px;
+  margin-right: 0;
+  line-height: 24px;
+  color: #777777;
+  font-weight: 400;
+}
+
+&__host {
+  display: none;
+}
+
+&__params_start {
+  display: flex;
+  flex-direction: column-reverse;
+
+  
+.date {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    font-size: 12px;
+    line-height: 24px;
+    color: #777777;
+    font-family: 'Inter';
+    margin-bottom: 20px;
+}
+}
+
+&__param-text {
+
+  &_flex {
+     flex: 1;
+  }
+}
+}
+
+}
+
+@media (max-width: 500px) {
+  .booking-page .confirm .send-request-btn {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.booking-page__img {
+  max-height: 172px;
+}
+
+.booking-page {
+  margin: 20px auto;
+}
+}
+
+.desk-hidden {
+  display: inline-block;
+  @media (min-width: 768px) {
+  display: none;
+}
+}
+
+
+.mobil-hidden {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

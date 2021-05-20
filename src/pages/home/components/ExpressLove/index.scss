@@ -1,0 +1,61 @@
+.express-love {
+  background-image: url('../../../../assets/express-love.png');
+  height: 393px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+
+  &__wrapper {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    font-size: 71px;
+    font-weight: 400;
+    font-family: 'Great Vibes', cursive;
+    background: none;
+  }
+
+  &__about {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+  }
+
+  &__explore {
+    width: 134px;
+    height: 47px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    background-color: #ffffff;
+    border: none;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__right-arrow {
+    margin-left: 12px;
+    width: 6px;
+    height: 10px;
+  }
+}
+
+.container-home {
+    padding: 0 10%;
+}

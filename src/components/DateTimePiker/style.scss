@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.dateTime {
+  position: absolute;
+  width: 380px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #b3b3b3;
+  z-index: 100;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  font-family: "Inter";
+  font-size: 14px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+
+  &-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin:  15px 0 10px 0;
+    font-family: 'Averta';
+    font-size: 18px;
+    font-weight: lighter;
+
+    &-search {
+      border: none;
+      background-color: $common-color;
+      color: white;
+      text-transform: capitalize;
+      width: 120px;
+      height: 47px;
+      border-radius: 25px;
+      margin-bottom: 10px;
+      &:disabled {
+        background: gray;
+        cursor: no-drop;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    &-search.clear{
+      background-color: indianred;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.search-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 65px;
+  // margin-left: 0;
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-column-gap: 10px;
+    column-gap: 35px;
+    grid-row-gap: 41px;
+    row-gap: 25px;
+
+    @media (max-width: 1920px) {
+      grid-template-columns: 14% 14% 14% 14% 14% 14%;
+      grid-column-gap: 10px;
+      column-gap: 40px;
+      grid-row-gap: 50px;
+      row-gap: 15px;
+    }
+    @media (max-width: 1690px) {
+      column-gap: 27px;
+    }
+    @media (max-width: 1790px) {
+      grid-template-columns: 18% 18% 18% 18% 18%;
+    }
+    @media (max-width: 1366px) {
+      grid-template-columns: 23% 23% 23% 23%;
+    }
+  }
+  .pagination{
+    width: 93%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto 0;
+  }
+  .item-pagination.prev, .item-pagination.next{
+    display: block;
+  }
+  .item-pagination {
+    display: none;
+    font-size: 14px;
+    padding: 12px 0 10px;
+    font-family: "Inter";
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0 10px;
+
+    width: 120px;
+    height: 47px;
+    border-radius: 24px;
+    background-color: #078089;
+
+    &:first-child {
+      display: none;
+    }
+    &:last-child {
+        display: none;
+    }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+  }
+  .active {
+    width: 33px;
+    border-radius: 50%;
+    background: #007bff;
+    text-align: center;
+    &:hover {
+      color: #4183c4;
+    }
+    a {
+      color: white;
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  .disabled {
+    a:hover {
+      cursor: not-allowed;
+    }
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}
+.filter.container {
+  background: #f2f2f2;
+}
+//.wrapper_filters{
+//  display: flex;
+//  align-items: center;
+//  background: white;
+//  margin-bottom: 20px !important;
+//  margin-top: 70px !important;
+//  width: 100%;
+//}
+.sorting{
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-bottom: 20px !important;
+  margin-top: 70px !important;
+  width: 89%;
+  justify-content: flex-end;
+  p{
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}
+.sortBy{
+  width: 200px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #e9e9e9 !important;
+
+  margin-right: 15px !important;
+}

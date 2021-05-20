@@ -1,0 +1,99 @@
+@import '../../../../index.scss';
+
+.custom_radio_group .custom_radio {
+  width: 25%;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 46px;
+  display: inline-block;
+  vertical-align: top; float:none;
+}
+.white-box {
+  background: #fff;
+  border: 1px #ccc solid;
+  padding: 0 30px;
+  clear: both;
+  overflow: hidden;
+  margin: 20px 20px
+}
+.custom_radio{float:left;position:relative;padding-left:29px;font-size:18px;font-weight:600;font-style:normal;font-stretch:normal;line-height:normal;margin:0px;letter-spacing:normal;color:#1b1e4f;}
+
+.custom_radio input{display:none;}
+
+.custom_radio span{float:left;position:absolute;width:15px;height:15px;
+border:solid 1px #aeaeae;background-color:#fff;border-radius:50%;left:0;top:3px;}
+
+.custom_radio input:checked + span:after{content:"";width:9px;height:9px;background-color:#369f8a;position:absolute;
+border-radius:50%;top:2px;left:2px;}
+.custom_radio img, .custom_radio i{ margin:0 10px; width: 20px;}
+.product-box h2{ font-size:14px; margin:15px 0; font-weight:bold;clear: both;}
+.form-group label{  font-size: 12px;
+
+font-weight: 600;
+
+font-style: normal;
+
+font-stretch: normal;
+
+line-height: normal;
+float: left;width: 100%;
+letter-spacing: normal;
+
+color: #1b1e4f;margin: 0px;padding: 0px;margin-bottom: 7px;}
+.form-control{  height: 40px; border: solid 1px #cfcfcf; background-color: #ffffff;  font-size: 14px;
+box-shadow: 0 2px 7px 0 rgba(173,173,173,0.54);
+font-weight: 500;
+
+font-style: normal;
+
+font-stretch: normal;
+border-radius: 0px;
+line-height: 1.71;
+
+letter-spacing: normal;
+float: left;width: 100%;
+color: #1b1e4f;}
+textarea.form-control{height: 133px;resize: none;}
+select.form-control{-webkit-appearance: none;appearance: none;-moz-appearance: none;background-repeat: no-repeat;
+background-position: calc(100% - 10px) calc(100% - 12px);background-size: 15px;padding-right: 35px;}
+select::-ms-expand {
+display: none;
+}
+.product-box{ clear:both;}
+.hours-list { margin-bottom:10px;}
+
+.cronofy-events{
+  margin-top: 150px;
+  div{
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    &:hover{
+      color: #078089;
+    }
+  }
+}
+
+.dialog-cronofy{
+  color: black;
+  h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.wrapper-dialog-cronofy{
+  display: flex;
+  flex-direction: column;
+  div{
+    border-bottom: 1px solid gray;
+  }
+  button{
+    width: 100%;
+    margin-top: 50px;
+  }
+}

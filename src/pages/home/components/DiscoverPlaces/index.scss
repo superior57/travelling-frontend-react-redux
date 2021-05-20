@@ -1,0 +1,78 @@
+.discover-places {
+  padding: 100px 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+
+  &__card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid #f1f0f0;
+
+    &:after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      background-repeat: round;
+      background-image: url('../../../../assets/discover/shadow.png');
+    }
+
+    &-info {
+      position: absolute;
+      z-index: 1;
+      bottom: 18px;
+      left: 24px;
+    }
+
+    &-name {
+      line-height: 1;
+      display: block;
+      color: #ffffff;
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &-venues {
+      color: #ffffff;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &__text {
+    color: #222222;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 10px;
+  }
+
+  &-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .stroke {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,537 @@
+@import '../../../index.scss';
+
+.header {
+  padding: 0;
+}
+.booking {
+  border-bottom: 2px solid #efefef;
+}
+.header-content {
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  h1{
+    //margin-bottom: 50px;
+    min-height: 0rem;
+  }
+  p{
+    margin-bottom: 13px;
+    min-height: 0;
+  }
+  .stroke{
+    margin-bottom: 15px;
+
+  }
+}
+
+.wrapper-reservation-content{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+
+  .reservation-content.sidebar{
+    width: 20%;
+    position: relative;
+    padding: 10px 15px 30px;
+    h3{
+      font-family: Inter;
+      font-weight: bold;
+      color: #078089;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .messages{
+      overflow: auto;
+      height: 330px;
+
+      .info{
+        margin-right: 15px;
+        margin-bottom: 15px;
+        font-family: Inter;
+
+        .username{
+          display: flex;
+          justify-content: space-between;
+          font-size: 12px;
+          font-weight: bold;
+          color: #078089;
+          margin-bottom: 5px;
+          .date{
+            font-size: 11px;
+            font-weight: normal;
+            color: initial;
+          }
+        }
+        p{
+          font-size: 13px;
+        }
+      }
+
+      p{
+        white-space: normal;
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+      }
+    }
+    .reply-wrapper{
+      width: 90%;
+      position: absolute;
+      bottom: 10%;
+      display: flex;
+      align-items: center;
+      .reply-input{
+        width: 100%;
+        border: solid 1px #e9e9e9;
+        display: block;
+        padding: 6px 12px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #a5a5a5;
+        margin-right: 5px;
+        &:focus{
+          outline: none;
+        }
+      }
+
+      button{
+        background: #078089;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: normal;
+        font-family: Inter;
+        padding: 3px 7px;
+      }
+    }
+  }
+}
+.reservation-content{
+  .invoice.messages{
+    text-align: end;
+  }
+  margin-right: 30px;
+  width: 1024px;
+  box-shadow: 0 0 11.7px 1.3px rgba(0, 5, 7, 0.14);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 24px 30px;
+  .main-info{
+    //background-color: green;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    .venue-card{
+      width: 40%;
+      .place-card-image{
+        width: 350px;
+        height: 220px;
+      }
+    }
+    .host{
+      //width: 60%;
+
+      width: 57%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: auto;
+      .message{
+        font-family: Inter;
+        color: #646464;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.5;
+        margin: 10px 50px 10px 0;
+      }
+      .date{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .people{
+        display: flex;
+        align-items: center;
+      }
+      .date, .people, .summ{
+        margin-bottom: 10px;
+        .booking-page__param-text{
+          font-family: Inter;
+          color: #646464;
+          font-size: 18px;
+        }
+      }
+      &-name{
+        color: #646464;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: normal;
+        text-transform: initial;
+        margin-bottom: 10px;
+        span{
+          font-weight: bold;
+          color: #078089;
+        }
+      }
+      &-email{
+        color: #646464;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: normal;
+        text-transform: initial;
+        margin-bottom: 10px;
+
+        span{
+          font-weight: bold;
+          color: #078089;
+        }
+      }
+    }
+  }
+
+  .invoice{
+    width: 100%;
+    padding-left: 15px;
+    margin: 0 auto;
+
+    .startBooking-content-review-btn.add-invoice{
+      background-color: #078089;
+      color: white;
+      width: 160px;
+      height: 35px;
+    }
+    .startBooking-content-review-btn{
+      width: 65px;
+      height: 25px;
+      padding: 0;
+      &:last-child{
+        background-color: #078089;
+        color: white;
+      }
+    }
+
+    .dropdown-toggle::after{
+      color: #646464;
+    }
+    .btn-primary{
+      background-color: initial;
+      border-color: initial;
+      &:focus{
+        background-color: initial;
+        border-color: initial;
+        box-shadow: none !important;
+      }
+      &.dropdown-toggle:active{
+        background-color: initial !important;
+        border-color: initial !important;
+        box-shadow: initial !important;
+      }
+    }
+    .title{
+      font-family: Inter;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .description{
+      display: flex;
+      align-items: center;
+      span{
+        font-family: Inter;
+        color: #646464;
+        font-size: 18px;
+        width: 300px;
+      }
+      .btns{
+        margin-left: 50px;
+      }
+    }
+
+  }
+}
+
+.add-invoice-main-description{
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+  .description{
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+}
+.dialog-invoice-details{
+  margin: 25px 24px 15px;
+  .form-row{
+    margin: 10px 0 5px;
+  }
+  .submit-button:last-child{
+    margin-top: 10px;
+    text-align: end;
+  }
+}
+
+.invoice-wrapper{
+  background: rgba(233, 235, 239, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px 16px;
+  margin-bottom: 30px;
+  .accordion{
+
+  }
+  .invoice-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-bottom: 19px;
+    background-color: initial;
+    border: none;
+    div{
+      display: flex;
+      align-items: center;
+    }
+    .arrow{
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-left: 1px solid #757373;
+      border-bottom: 1px solid #757373;
+      transform: rotate(-45deg);
+      margin-right: 10px;
+    }
+    h2{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      margin-bottom: 0;
+    }
+    span{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 14px;
+      color: #000000;
+      opacity: 0.5;
+      margin-left: 21px;
+    }
+  }
+  .invoice-desc{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    p{
+      display: flex;
+      justify-content: space-between;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+
+      color: #000000;
+
+      opacity: 0.5;
+    }
+  }
+  .invoice-sum{
+    border-top: 1px solid #d7d7d7;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-right: 10px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #262626;
+    span{
+      opacity: 1;
+    }
+
+  }
+}
+
+.reservation-details-wrapper .invoice .startBooking-content-review-btn {
+  height: auto;
+  padding: 10px;
+  width: 153px;
+  cursor: pointer;
+}
+
+.MuiTableCell-root {
+  font-family: 'Inter';
+  color: #777777;
+}
+
+@media (max-width: 1045px) {
+
+  .reservation-content{
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .reservation-details-wrapper {
+    box-shadow: none;
+    width: 100%;
+    max-width: 100%;
+
+    .main-info{
+      .host {
+        margin-left: 0;
+    }
+
+    .venue-card .place-card-image {
+      width: 100%;
+  }
+    }
+}
+
+
+}
+
+@media (max-width: 767px) {
+
+  .reservation-details-wrapper {
+    .main-info {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .venue-card {
+        width: 100%;
+    }
+    
+
+      .host {
+        margin-left: 15px;
+        width: calc(100% - 15px);
+      }
+
+      .host-name span {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #10A5AD;
+      text-transform: capitalize;
+      }
+
+      .host-email {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+
+      span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #078089;
+    }
+      }
+
+    .host .date {
+      margin-top: 0px;
+    }
+
+    .message {
+      display: none;
+  }
+
+  }
+
+  .reservation-content {
+    width: 100%;
+    padding-left: 0;
+    box-shadow: none;
+    padding-top: 0px;
+  }
+
+  .invoice .startBooking-content-review-btn {
+    height: auto;
+    padding: 10px;
+    width: 153px;
+  }
+
+  .ContactPage__page-name {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6A6A6A;
+}
+
+.ContactPage__page-name-wrapper {
+  background: #ffffff;
+}
+
+.place-card-image-img {
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+  }
+}
+
+@media (max-width: 400px) {
+
+  .reservation-details-wrapper {
+    .main-info {
+      .venue-card {
+        width: 100%;
+    }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+
+  .reservation-content {
+    padding-right: 0px;
+}
+
+  .reservation-details-wrapper {
+    .main-info {
+      .venue-card {
+        .place-card-image {
+          width: 100%;
+        }
+    }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+.reservation-details-wrapper .invoice .startBooking-content-review-btn {
+    height: auto;
+    padding: 10px;
+    width: 138px;
+}
+}
+
+

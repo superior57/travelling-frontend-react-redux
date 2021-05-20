@@ -1,0 +1,14 @@
+.owner-label {
+  font-size: 16px;
+  font-family: 'Averta';
+  display: inline-flex;
+  align-items: baseline;
+  color: #000;
+  line-height: normal;
+  .medal {
+    color: #ff385c;
+  }
+  .owner {
+    padding-left: 2px;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../../../../../index.scss';
+
+.review-item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $border-color-light;
+  margin-top: 2%;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: center;
+  padding: 21px 0px 13px 5px;
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 23%;
+    &-img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: solid 2px #078089;
+    }
+  }
+
+  &-right {
+    width: 70%;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      padding: 1%;
+
+      &-title {
+        @include fonts(15px, $text-color-normal, 600, Inter);
+      }
+      &-more {
+        @include fonts(10px, $text-color-body, 300, Inter);
+      }
+    }
+
+    &-content {
+      padding: 5px;
+      @include fonts(13px, $text-color-normal, 300, Inter);
+    }
+  }
+}
